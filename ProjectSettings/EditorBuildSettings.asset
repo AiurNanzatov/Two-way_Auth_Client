@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CAPTCHA.unity
     guid: 6c554a9dc965b9a4fae8f9cc0ccac902
+  - enabled: 1
+    path: Assets/Scenes/Ingame_interaction.unity
+    guid: e8526dee69ee0ae4fa28229489185cf9
   m_configObjects: {}

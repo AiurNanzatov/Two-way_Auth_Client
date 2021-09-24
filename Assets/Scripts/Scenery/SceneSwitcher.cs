@@ -25,4 +25,9 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
     }
+
+    public void IngameInteraction()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
