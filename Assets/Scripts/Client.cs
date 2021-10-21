@@ -12,7 +12,8 @@ public class Client : MonoBehaviour
     private const int PORT = 26000;
     private const int WEB_PORT = 26001;
     private const int BYTE_SIZE = 1024;
-    private const string SERVER_IP = "192.168.137.1";
+    private const string SERVER_IP = "127.0.0.1";
+    // 192.168.137.1
 
 
     private byte reliableChannel;
