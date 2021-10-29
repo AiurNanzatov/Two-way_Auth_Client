@@ -8,26 +8,36 @@ public class SceneSwitcher : MonoBehaviour
 {
     public void LoginPassMethod()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void DigitalCodeMethod()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(0);
     }
 
     public void BacktoMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
+    }
+
+    public void DigitalCodeMethod()
+    {
+        SceneManager.LoadScene(2);
     }
 
     public void CAPTCHASwitcher()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene(3);
+    }
+
+    public void SoundUsage()
+    {
+        SceneManager.LoadScene(4);
     }
 
     public void IngameInteraction()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
+    }
+
+    public void ClosePopUp()
+    {
+        SceneManager.LoadPreviousScene();
     }
 }

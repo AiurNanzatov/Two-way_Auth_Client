@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main_lobby.unity
-    guid: d5be7b405cb1e5b4bb570c40fffb3342
-  - enabled: 1
     path: Assets/Scenes/Login_Password.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Main_lobby.unity
+    guid: d5be7b405cb1e5b4bb570c40fffb3342
   - enabled: 1
     path: Assets/Scenes/Digital_Code.unity
     guid: b94849c02354c7649b201e7cc32ccf80
   - enabled: 1
     path: Assets/Scenes/CAPTCHA.unity
     guid: 6c554a9dc965b9a4fae8f9cc0ccac902
+  - enabled: 1
+    path: Assets/Scenes/Sound.unity
+    guid: 902a929ebcd1fc6448d51f4f85378f76
   - enabled: 1
     path: Assets/Scenes/Ingame_interaction.unity
     guid: e8526dee69ee0ae4fa28229489185cf9

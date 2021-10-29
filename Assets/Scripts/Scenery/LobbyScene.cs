@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LobbyScene : MonoBehaviour
 {
@@ -31,6 +32,17 @@ public class LobbyScene : MonoBehaviour
         string password = GameObject.Find("LoginPassword").GetComponent<TMP_InputField>().text;
 
         Client.Instance.SendLoginRequest(usernameOrEmail, password);
+    }
+
+    public void OnSliderValueAdjust()
+    {
+       // DisableInputs();
+
+        float MinRange = GameObject.Find("MinRangeSlider").GetComponent<Slider>().value; ;
+        float MaxRange = GameObject.Find("MaxRangeSlider").GetComponent<Slider>().value; ;
+        float Feather = GameObject.Find("OpacitySlider").GetComponent<Slider>().value; ;
+
+        Client.Instance.SendSliderValue(MinRange, MaxRange, Feather);
     }
 
     public void ChangeWelcomeMessage(string msg)

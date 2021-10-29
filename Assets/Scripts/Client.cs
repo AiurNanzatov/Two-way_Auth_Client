@@ -179,6 +179,17 @@ public class Client : MonoBehaviour
 
         SendServer(lr);
     }
+
+    public void SendSliderValue(float MinRange, float MaxRange, float Feather)
+    {
+        Net_SliderValue sv = new Net_SliderValue();
+
+        sv.MinRange = MinRange;
+        sv.MaxRange = MaxRange;
+        sv.Feather = Feather;
+
+        SendServer(sv);
+    }
     #endregion
 
 
